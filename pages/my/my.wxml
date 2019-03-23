@@ -1,0 +1,30 @@
+<!--pages/my/my.wxml-->
+
+<view class="page">
+  <!--利用view创建高度-->
+  <view class="myhead"></view>
+  <!--我的信息头像框 使用的是微信头像-->
+  <view class="page__hd fix">
+    <view class="weui-flex">
+      <view class="weui-flex__item ">
+        <view class="icon-box">
+          <!-- <icon type="success" size="93"></icon> -->
+          <image src="../../images/menu/mycars.png" class="user_img" size="93"></image>
+          <view class="icon-box__ctn">
+            <view class='title'>
+              <text class="icon-box__title">{{ useller.adminname }}</text>
+            </view>
+            <view class="icon-box__desc" style='color:white;font-weight:600' bindtap='goMobile'>手机：{{ useller.tel1 }}</view>
+            <view class="icon-box__desc txt">余额：￥233</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 关于我的菜单 -->
+  <van-row>
+    <van-cell title="我的优惠券" icon="gift-o" url="../mycoupon/mycoupon" is-link />
+    <van-cell title="我的钱包" icon="pending-payment" is-link />
+    <van-cell title="修改密码" icon="setting-o" url="../changePassword/changePassword" is-link />
+  </van-row>
+</view>

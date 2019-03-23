@@ -1,0 +1,35 @@
+<view class='page'>
+  <view class='page_bd'>
+    <!-- 轻提示框 -->
+    <van-toast id="van-toast" />
+    <van-notify id="custom-selector" />
+    <!-- 登录表单 -->
+    <van-cell-group>
+      <van-cell title="优惠券" value="{{ coupon_value }}" is-link bind:click="selectCoupon" />
+      <van-switch-cell title="生成" checked="{{ checked }}" bind:change="onChange" />
+    </van-cell-group>
+    <view>
+      <van-toast id="van-toast" duration="1000" />
+      <van-popup show="{{ show }}" position="bottom" overlay="true" bind:close="" bind:click-overlay="onOverlay">
+        <van-picker show-toolbar title="选择优惠券" columns="{{ couponList }}" bind:cancel="onCancel" bind:confirm="onConfirm" />
+      </van-popup>
+    </view>
+    <van-transition show="{{ checked }}" name="fade">
+      <!-- 询问框 -->
+      <van-dialog id="van-dialog" style='position：absolute;' />
+      <view style='padding:20px;position：absolute;'>
+        <text class="QRmsg">{{ coupon_value }}</text>
+        <text class="QRmsg">-----------------------------</text>
+        <view style='display:flex;justify-content:center;margin-top:20px;'>
+          <canvas class='canvas' style="width:{{qrcodeWidth}}px; height:{{qrcodeWidth}}px;z-index:-1;position：absolute;" canvas-id='canvas'></canvas>
+        </view>
+        <view slot="footer">
+          <text class="QRdescription">请对准二维码扫描并领取</text>
+          <view class='btn_QR'>
+            <van-button type="info" size="large" bind:click="QRrefresh">刷新</van-button>
+          </view>
+        </view>
+      </view>
+    </van-transition>
+  </view>
+</view>

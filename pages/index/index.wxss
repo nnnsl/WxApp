@@ -1,0 +1,52 @@
+.van-row {
+  padding: 20rpx 10rpx 10rpx 10rpx;
+}
+
+.logotext {
+  font-weight: 600;
+}
+
+.logincheckbox {
+  padding: 10px 10px 10px 15px;
+}
+
+.van-checkbox__label {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.van-doc-demo-block__title {
+  padding-top: 20px;
+  margin: 0px;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(69, 90, 100, 0.6);
+  padding: 35px 15px 15px;
+}
+
+.title_cell {
+  padding: 20px 0px 10px 0px;
+}
+
+.item_title {
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+.item_icontent {
+  -webkit-flex: 1;
+  flex: 1;
+  overflow: hidden;
+  color: #999;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.van-row {
+  padding: 0rpx 0rpx 30rpx 0rpx;
+}
+
+.coupon_detailed {
+  text-align: right;
+  color: #4b5cc4;
+}

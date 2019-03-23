@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "应用",
+  "usingComponents": {
+    "van-button": "../../dist/button/index"
+  }
+}

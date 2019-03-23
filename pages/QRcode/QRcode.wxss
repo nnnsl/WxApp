@@ -1,0 +1,20 @@
+.btn_QR {
+  margin-top: 20px;
+}
+
+.van-cell__title van-cell__title {
+  font-size: 20px;
+}
+
+.QRmsg {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.QRdescription {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size:15px;
+}

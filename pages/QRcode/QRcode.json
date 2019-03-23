@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "二维码生成",
+  "usingComponents": {
+    "van-dialog": "../../dist/dialog/index"
+  }
+}

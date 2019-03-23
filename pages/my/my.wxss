@@ -1,0 +1,59 @@
+.user_img {
+  width: 200rpx;
+  height: 200rpx;
+  margin-top: -150rpx;
+  margin-right: 33rpx;
+  object-fit: cover;
+  display: block;
+  float: left;
+  overflow: hidden;
+  border: 5rpx solid #fff;
+  border-radius: 5%;
+}
+
+.page__hd {
+  padding-left: 30px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+  text-align: left;
+  padding-top: 0;
+}
+
+.icon-box__ctn  .txt {
+  color: #888;
+}
+
+.icon-box {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.icon-box__ctn {
+  margin-top: -150rpx;
+  display: block;
+  flex-shrink: 100;
+}
+
+.icon-box__title {
+  /* margin-top: -100rpx; */
+  font-size: 20px;
+  color: white;
+}
+
+.icon-box__desc {
+  margin-top: 25rpx;
+  font-size: 34rpx;
+  color: #fff;
+}
+
+.icon_sp_area {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.myhead {
+  display: block;
+  background-color: #4b5cc4;
+  height: 100px;
+}

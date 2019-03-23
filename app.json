@@ -1,0 +1,71 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/QRcode/QRcode",
+    "pages/mycoupon/mycoupon",
+    "pages/my/my",
+    "pages/index/index",
+    "pages/changePassword/changePassword",
+    "pages/content/content",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "navigationStyle": "default",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4b5cc4",
+    "backgroundColor": "#4b5cc4",
+    "navigationBarTitleText": "小闸出行",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#4b5cc4",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/tarbaricon/indexicon.png",
+        "selectedIconPath": "images/tarbaricon/indexicon_checked.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/content/content",
+        "iconPath": "images/tarbaricon/appicon.png",
+        "selectedIconPath": "images/tarbaricon/appicon_checked.png",
+        "text": "应用"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "images/tarbaricon/mineicon.png",
+        "selectedIconPath": "images/tarbaricon/mineicon_checked.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-row": "../../dist/row/index",
+    "van-col": "../../dist/col/index",
+    "van-button": "../../dist/button/index",
+    "van-field": "../../dist/field/index",
+    "van-tab": "../../dist/tab/index",
+    "van-tabs": "../../dist/tabs/index",
+    "van-notify": "../../dist/notify/index",
+    "van-switch-cell": "../../dist/switch-cell/index",
+    "van-checkbox": "../../dist/checkbox/index",
+    "van-checkbox-group": "../../dist/checkbox-group/index",
+    "van-cell": "../../dist/cell/index",
+    "van-cell-group": "../../dist/cell-group/index",
+    "van-switch-cell": "../../dist/switch-cell/index",
+    "van-popup": "../../dist/popup/index",
+    "van-picker": "../../dist/picker/index",
+    "van-toast": "../../dist/toast/index",
+    "van-panel": "../../dist/panel/index",
+    "van-action-sheet": "../../dist/action-sheet/index",
+    "van-transition": "../../dist/transition/index",
+    "van-collapse": "../../dist/collapse/index",
+    "van-collapse-item": "../../dist/collapse-item/index",
+    "van-tag": "../../dist/tag/index",
+    "van-dialog": "../../dist/dialog/index"
+  }
+}

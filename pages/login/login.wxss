@@ -1,0 +1,20 @@
+.van-row {
+  padding: 20rpx 10rpx 10rpx 10rpx;
+}
+
+.logotext {
+  font-weight: 600;
+}
+.logo_login{
+  width: 70px;
+  height: 70px;
+}
+.logincheckbox {
+  padding: 10px 10px 10px 15px;
+}
+
+.van-checkbox__label {
+  margin-left: 10px;
+  font-size: 14px;
+}
+

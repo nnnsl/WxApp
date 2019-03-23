@@ -1,0 +1,26 @@
+<view class='page'>
+  <view class='page_bd'>
+    <view class="container">
+      <view class="userinfo">
+        <image class="logo_login" src="../../images/icon_home_click.png" mode="cover"></image>
+      </view>
+      <view class="usermotto">
+        <text class="logotext">小闸合作商登录</text>
+      </view>
+    </view>
+    <van-cell-group>
+      <!-- 通知层 -->
+      <van-notify id="custom-selector" />
+      <!-- 邮箱登录 -->
+      <van-field value="{{ username }}" disabled="{{ disabled_user }}" clearable label="邮箱" bind:input="monitor_user" error-message="" placeholder="请输入邮箱" />
+
+      <van-field value="{{ password }}" maxlength="16" disabled="{{disabled_psd}}" type="password" bind:input="monitor_psd" label="密码" clearable placeholder="请输入密码" border="{{ false }}" />
+      <van-row>
+        <van-checkbox value="{{ checked }}" checked-color="#4b5cc4" bind:change="onChange">记住密码</van-checkbox>
+      </van-row>
+      <van-row>
+        <van-button loading="{{ loaded }}" bind:click="login" type="primary" size="large">{{ btn1msg }}</van-button>
+      </van-row>
+    </van-cell-group>
+  </view>
+</view>

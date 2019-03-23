@@ -1,0 +1,30 @@
+<van-collapse value="{{ activeNames }}" bind:change="onFold" accordion>
+  <van-collapse-item title="已使用优惠券" name="1">
+    <van-row>
+      <van-col span="4">数量</van-col>
+      <van-col class="coupon_detailed" span="10" offset="10">{{ couponinfoUsed.sumnum }}</van-col>
+    </van-row>
+    <van-row>
+      <van-col span="4">优惠金额</van-col>
+      <van-col class="coupon_detailed" span="10" offset="10">{{ couponinfoUsed.summoney }} 元</van-col>
+    </van-row>
+    <van-row>
+      <van-col span="4">优惠时长</van-col>
+      <van-col class="coupon_detailed" span="10" offset="10">{{ couponinfoUsed.sumtime }} 小时</van-col>
+    </van-row>
+  </van-collapse-item>
+  <van-collapse-item title="过期优惠券" name="2">
+    <van-row>
+      <van-col span="4">数量</van-col>
+      <van-col class="coupon_detailed" span="10" offset="10">{{ couponinfo.sumnum }}</van-col>
+    </van-row>
+    <van-row>
+      <van-col span="4">优惠金额</van-col>
+      <van-col class="coupon_detailed" span="10" offset="10">{{ couponinfo.summoney }} 元</van-col>
+    </van-row>
+    <van-row>
+      <van-col span="4">优惠时长</van-col>
+      <van-col class="coupon_detailed" span="10" offset="10">{{ couponinfo.sumtime }} 小时</van-col>
+    </van-row>
+  </van-collapse-item>
+</van-collapse>
